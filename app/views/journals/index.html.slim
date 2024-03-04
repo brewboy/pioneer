@@ -1,0 +1,11 @@
+p style="color: green" = notice
+
+h1 Journals
+
+#journals
+  - @journals.each do |journal|
+    == render journal
+    p
+      = link_to "Show this journal", journal
+
+= link_to "New journal", new_journal_path

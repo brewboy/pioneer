@@ -1,0 +1,10 @@
+p style="color: green" = notice
+
+== render @journal
+
+div
+  => link_to "Edit this journal", edit_journal_path(@journal)
+  '|
+  =< link_to "Back to journals", journals_path
+
+  = button_to "Destroy this journal", @journal, method: :delete
