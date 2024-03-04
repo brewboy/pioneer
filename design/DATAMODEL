@@ -16,3 +16,12 @@ users
           - body
           - published_at
           - timestamps
+
+
+comments
+  belongs_to
+    user
+    entry
+
+  - title
+  - body
