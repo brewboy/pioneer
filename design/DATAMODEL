@@ -1,0 +1,18 @@
+users
+  - display_name
+  - email
+  - login credentials
+  - timestamps
+
+  has_many
+    journals
+      - title
+      - description
+      - timestamps
+
+      has_many
+        entries
+          - title
+          - body
+          - published_at
+          - timestamps
